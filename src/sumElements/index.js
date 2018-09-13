@@ -12,6 +12,14 @@
  */
 const sumElements = arr => {
   /* your logic here...*/
+  var sum = 0;
+  for (var i=0; i<arr.length; i++){
+    var finite = Number(arr[i]);
+    if (isFinite(finite)) {
+      sum += finite;
+    }
+  }
+  return sum;
 };
 
 export default sumElements;

@@ -11,6 +11,7 @@
 */
 const sum = (a, b) => {
   /* your logic here...*/
-};
-
+  if ((Number(a) == true) && (Number(b) == true))
+    return a + b;
+}
 export default sum;

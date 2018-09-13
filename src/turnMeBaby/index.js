@@ -9,6 +9,13 @@
  */
 const turnMeBaby = str => {
   /* your logic here...*/
+  var res = '';
+  for (var i=str.length; i>=0; i-- ) {
+
+    res = res + str[i];
+  }
+  return res;
+  }
 };
 
 export default turnMeBaby;

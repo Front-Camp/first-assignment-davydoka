@@ -9,6 +9,10 @@
  */
 const isObject = data => {
   /* your logic here...*/
+  //if ((typeof data === "object") && (data !== null) && (!isArray(data))) return true;
+  if (Object.prototype.toString.call(data) === "[object Object]") return true;
+
+  return false;
 };
 
 export default isObject;
